@@ -11,10 +11,8 @@ const postCSSPlugins = [
   require('postcss-mixins'),
   require('postcss-simple-vars'),
   require('postcss-nested'),
-
   require('autoprefixer')
 ]
-
 class RunAfterCompile {
   apply(compiler) {
     compiler.hooks.done.tap('Copy images', function () {
